@@ -1,1 +1,2 @@
-# ntedu_task1
+# Netcracker Education Center
+# Task 1
