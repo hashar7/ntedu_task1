@@ -1,0 +1,235 @@
+Classfile /Users/mikhail/QE/out/production/QE/com/company/Main.class
+  Last modified 5 июл. 2021 г.; size 1692 bytes
+  SHA-256 checksum 6a5c373dc20fdd3e79143d641a88c6031793d7465e4751bc1a8575a6575b0d50
+  Compiled from "Main.java"
+public class com.company.Main
+  minor version: 0
+  major version: 59
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #53                         // com/company/Main
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // com/company/QuadraticEquation
+   #8 = Utf8               com/company/QuadraticEquation
+   #9 = Methodref          #10.#11        // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+  #10 = Class              #12            // java/lang/Double
+  #11 = NameAndType        #13:#14        // valueOf:(D)Ljava/lang/Double;
+  #12 = Utf8               java/lang/Double
+  #13 = Utf8               valueOf
+  #14 = Utf8               (D)Ljava/lang/Double;
+  #15 = Double             2.0d
+  #17 = Methodref          #7.#18         // com/company/QuadraticEquation."<init>":(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+  #18 = NameAndType        #5:#19         // "<init>":(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+  #19 = Utf8               (Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+  #20 = Double             -1.0d
+  #22 = Double             -2.0d
+  #24 = Methodref          #7.#25         // com/company/QuadraticEquation.solveEquation:()V
+  #25 = NameAndType        #26:#6         // solveEquation:()V
+  #26 = Utf8               solveEquation
+  #27 = Fieldref           #28.#29        // java/lang/System.out:Ljava/io/PrintStream;
+  #28 = Class              #30            // java/lang/System
+  #29 = NameAndType        #31:#32        // out:Ljava/io/PrintStream;
+  #30 = Utf8               java/lang/System
+  #31 = Utf8               out
+  #32 = Utf8               Ljava/io/PrintStream;
+  #33 = Methodref          #7.#34         // com/company/QuadraticEquation.getX1:()Ljava/lang/Double;
+  #34 = NameAndType        #35:#36        // getX1:()Ljava/lang/Double;
+  #35 = Utf8               getX1
+  #36 = Utf8               ()Ljava/lang/Double;
+  #37 = Methodref          #7.#38         // com/company/QuadraticEquation.getX2:()Ljava/lang/Double;
+  #38 = NameAndType        #39:#36        // getX2:()Ljava/lang/Double;
+  #39 = Utf8               getX2
+  #40 = InvokeDynamic      #0:#41         // #0:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+  #41 = NameAndType        #42:#43        // makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+  #42 = Utf8               makeConcatWithConstants
+  #43 = Utf8               (Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+  #44 = Methodref          #45.#46        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #45 = Class              #47            // java/io/PrintStream
+  #46 = NameAndType        #48:#49        // println:(Ljava/lang/String;)V
+  #47 = Utf8               java/io/PrintStream
+  #48 = Utf8               println
+  #49 = Utf8               (Ljava/lang/String;)V
+  #50 = InvokeDynamic      #1:#41         // #1:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+  #51 = InvokeDynamic      #2:#41         // #2:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+  #52 = InvokeDynamic      #3:#41         // #3:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+  #53 = Class              #54            // com/company/Main
+  #54 = Utf8               com/company/Main
+  #55 = Utf8               Code
+  #56 = Utf8               LineNumberTable
+  #57 = Utf8               LocalVariableTable
+  #58 = Utf8               this
+  #59 = Utf8               Lcom/company/Main;
+  #60 = Utf8               main
+  #61 = Utf8               ([Ljava/lang/String;)V
+  #62 = Utf8               args
+  #63 = Utf8               [Ljava/lang/String;
+  #64 = Utf8               q1
+  #65 = Utf8               Lcom/company/QuadraticEquation;
+  #66 = Utf8               q2
+  #67 = Utf8               q3
+  #68 = Utf8               q4
+  #69 = Utf8               SourceFile
+  #70 = Utf8               Main.java
+  #71 = Utf8               BootstrapMethods
+  #72 = MethodHandle       6:#73          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #73 = Methodref          #74.#75        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #74 = Class              #76            // java/lang/invoke/StringConcatFactory
+  #75 = NameAndType        #42:#77        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #76 = Utf8               java/lang/invoke/StringConcatFactory
+  #77 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #78 = String             #79            // q1 solution:\u0001 \u0001
+  #79 = Utf8               q1 solution:\u0001 \u0001
+  #80 = String             #81            // q2 solution:\u0001 \u0001
+  #81 = Utf8               q2 solution:\u0001 \u0001
+  #82 = String             #83            // q3 solution:\u0001 \u0001
+  #83 = Utf8               q3 solution:\u0001 \u0001
+  #84 = String             #85            // q4 solution:\u0001 \u0001
+  #85 = Utf8               q4 solution:\u0001 \u0001
+  #86 = Utf8               InnerClasses
+  #87 = Class              #88            // java/lang/invoke/MethodHandles$Lookup
+  #88 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #89 = Class              #90            // java/lang/invoke/MethodHandles
+  #90 = Utf8               java/lang/invoke/MethodHandles
+  #91 = Utf8               Lookup
+{
+  public com.company.Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/company/Main;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=6, locals=5, args_size=1
+         0: new           #7                  // class com/company/QuadraticEquation
+         3: dup
+         4: dconst_0
+         5: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+         8: ldc2_w        #15                 // double 2.0d
+        11: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        14: dconst_1
+        15: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        18: invokespecial #17                 // Method com/company/QuadraticEquation."<init>":(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+        21: astore_1
+        22: new           #7                  // class com/company/QuadraticEquation
+        25: dup
+        26: dconst_1
+        27: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        30: dconst_0
+        31: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        34: ldc2_w        #20                 // double -1.0d
+        37: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        40: invokespecial #17                 // Method com/company/QuadraticEquation."<init>":(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+        43: astore_2
+        44: new           #7                  // class com/company/QuadraticEquation
+        47: dup
+        48: dconst_1
+        49: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        52: ldc2_w        #22                 // double -2.0d
+        55: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        58: dconst_1
+        59: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        62: invokespecial #17                 // Method com/company/QuadraticEquation."<init>":(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+        65: astore_3
+        66: new           #7                  // class com/company/QuadraticEquation
+        69: dup
+        70: dconst_1
+        71: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        74: dconst_0
+        75: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        78: dconst_1
+        79: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        82: invokespecial #17                 // Method com/company/QuadraticEquation."<init>":(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+        85: astore        4
+        87: aload_1
+        88: invokevirtual #24                 // Method com/company/QuadraticEquation.solveEquation:()V
+        91: aload_2
+        92: invokevirtual #24                 // Method com/company/QuadraticEquation.solveEquation:()V
+        95: aload_3
+        96: invokevirtual #24                 // Method com/company/QuadraticEquation.solveEquation:()V
+        99: aload         4
+       101: invokevirtual #24                 // Method com/company/QuadraticEquation.solveEquation:()V
+       104: getstatic     #27                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       107: aload_1
+       108: invokevirtual #33                 // Method com/company/QuadraticEquation.getX1:()Ljava/lang/Double;
+       111: aload_1
+       112: invokevirtual #37                 // Method com/company/QuadraticEquation.getX2:()Ljava/lang/Double;
+       115: invokedynamic #40,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+       120: invokevirtual #44                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       123: getstatic     #27                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       126: aload_2
+       127: invokevirtual #33                 // Method com/company/QuadraticEquation.getX1:()Ljava/lang/Double;
+       130: aload_2
+       131: invokevirtual #37                 // Method com/company/QuadraticEquation.getX2:()Ljava/lang/Double;
+       134: invokedynamic #50,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+       139: invokevirtual #44                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       142: getstatic     #27                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       145: aload_3
+       146: invokevirtual #33                 // Method com/company/QuadraticEquation.getX1:()Ljava/lang/Double;
+       149: aload_3
+       150: invokevirtual #37                 // Method com/company/QuadraticEquation.getX2:()Ljava/lang/Double;
+       153: invokedynamic #51,  0             // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+       158: invokevirtual #44                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       161: getstatic     #27                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       164: aload         4
+       166: invokevirtual #33                 // Method com/company/QuadraticEquation.getX1:()Ljava/lang/Double;
+       169: aload         4
+       171: invokevirtual #37                 // Method com/company/QuadraticEquation.getX2:()Ljava/lang/Double;
+       174: invokedynamic #52,  0             // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/String;
+       179: invokevirtual #44                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       182: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 22
+        line 8: 44
+        line 9: 66
+        line 10: 87
+        line 11: 91
+        line 12: 95
+        line 13: 99
+        line 14: 104
+        line 15: 123
+        line 16: 142
+        line 17: 161
+        line 24: 182
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     183     0  args   [Ljava/lang/String;
+           22     161     1    q1   Lcom/company/QuadraticEquation;
+           44     139     2    q2   Lcom/company/QuadraticEquation;
+           66     117     3    q3   Lcom/company/QuadraticEquation;
+           87      96     4    q4   Lcom/company/QuadraticEquation;
+}
+SourceFile: "Main.java"
+BootstrapMethods:
+  0: #72 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #78 q1 solution:\u0001 \u0001
+  1: #72 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #80 q2 solution:\u0001 \u0001
+  2: #72 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #82 q3 solution:\u0001 \u0001
+  3: #72 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #84 q4 solution:\u0001 \u0001
+InnerClasses:
+  public static final #91= #87 of #89;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -1,0 +1,319 @@
+Classfile /Users/mikhail/QE/out/production/QE/com/company/QuadraticEquation.class
+  Last modified 5 июл. 2021 г.; size 1736 bytes
+  SHA-256 checksum 656ea5827233af0c58546e621b7d3a71a1cce290f60edc3a616d79c122cdb1a8
+  Compiled from "QuadraticEquation.java"
+public class com.company.QuadraticEquation
+  minor version: 0
+  major version: 59
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #14                         // com/company/QuadraticEquation
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 5, methods: 6, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+   #8 = Class              #10            // java/lang/Double
+   #9 = NameAndType        #11:#12        // valueOf:(D)Ljava/lang/Double;
+  #10 = Utf8               java/lang/Double
+  #11 = Utf8               valueOf
+  #12 = Utf8               (D)Ljava/lang/Double;
+  #13 = Fieldref           #14.#15        // com/company/QuadraticEquation.a:Ljava/lang/Double;
+  #14 = Class              #16            // com/company/QuadraticEquation
+  #15 = NameAndType        #17:#18        // a:Ljava/lang/Double;
+  #16 = Utf8               com/company/QuadraticEquation
+  #17 = Utf8               a
+  #18 = Utf8               Ljava/lang/Double;
+  #19 = Fieldref           #14.#20        // com/company/QuadraticEquation.b:Ljava/lang/Double;
+  #20 = NameAndType        #21:#18        // b:Ljava/lang/Double;
+  #21 = Utf8               b
+  #22 = Fieldref           #14.#23        // com/company/QuadraticEquation.c:Ljava/lang/Double;
+  #23 = NameAndType        #24:#18        // c:Ljava/lang/Double;
+  #24 = Utf8               c
+  #25 = Methodref          #14.#26        // com/company/QuadraticEquation.isQuadratic:()Z
+  #26 = NameAndType        #27:#28        // isQuadratic:()Z
+  #27 = Utf8               isQuadratic
+  #28 = Utf8               ()Z
+  #29 = Class              #30            // com/company/QuadraticEquation$Discriminant
+  #30 = Utf8               com/company/QuadraticEquation$Discriminant
+  #31 = Methodref          #29.#32        // com/company/QuadraticEquation$Discriminant."<init>":(Lcom/company/QuadraticEquation;Lcom/company/QuadraticEquation;)V
+  #32 = NameAndType        #5:#33         // "<init>":(Lcom/company/QuadraticEquation;Lcom/company/QuadraticEquation;)V
+  #33 = Utf8               (Lcom/company/QuadraticEquation;Lcom/company/QuadraticEquation;)V
+  #34 = Methodref          #29.#35        // com/company/QuadraticEquation$Discriminant.isValid:()Z
+  #35 = NameAndType        #36:#28        // isValid:()Z
+  #36 = Utf8               isValid
+  #37 = Fieldref           #14.#38        // com/company/QuadraticEquation.x1:Ljava/lang/Double;
+  #38 = NameAndType        #39:#18        // x1:Ljava/lang/Double;
+  #39 = Utf8               x1
+  #40 = Fieldref           #14.#41        // com/company/QuadraticEquation.x2:Ljava/lang/Double;
+  #41 = NameAndType        #42:#18        // x2:Ljava/lang/Double;
+  #42 = Utf8               x2
+  #43 = Methodref          #8.#44         // java/lang/Double.doubleValue:()D
+  #44 = NameAndType        #45:#46        // doubleValue:()D
+  #45 = Utf8               doubleValue
+  #46 = Utf8               ()D
+  #47 = Methodref          #29.#48        // com/company/QuadraticEquation$Discriminant.getDiscriminant:()Ljava/lang/Double;
+  #48 = NameAndType        #49:#50        // getDiscriminant:()Ljava/lang/Double;
+  #49 = Utf8               getDiscriminant
+  #50 = Utf8               ()Ljava/lang/Double;
+  #51 = Methodref          #52.#53        // java/lang/Math.sqrt:(D)D
+  #52 = Class              #54            // java/lang/Math
+  #53 = NameAndType        #55:#56        // sqrt:(D)D
+  #54 = Utf8               java/lang/Math
+  #55 = Utf8               sqrt
+  #56 = Utf8               (D)D
+  #57 = Double             2.0d
+  #59 = Methodref          #52.#60        // java/lang/Math.abs:(D)D
+  #60 = NameAndType        #61:#56        // abs:(D)D
+  #61 = Utf8               abs
+  #62 = Double             1.0E-323d
+  #64 = Utf8               Code
+  #65 = Utf8               LineNumberTable
+  #66 = Utf8               LocalVariableTable
+  #67 = Utf8               this
+  #68 = Utf8               Lcom/company/QuadraticEquation;
+  #69 = Utf8               (Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+  #70 = Utf8               solveEquation
+  #71 = Utf8               discriminant
+  #72 = Utf8               Lcom/company/QuadraticEquation$Discriminant;
+  #73 = Utf8               StackMapTable
+  #74 = Utf8               getX1
+  #75 = Utf8               getX2
+  #76 = Utf8               SourceFile
+  #77 = Utf8               QuadraticEquation.java
+  #78 = Utf8               NestMembers
+  #79 = Utf8               InnerClasses
+  #80 = Utf8               Discriminant
+{
+  public com.company.QuadraticEquation();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: dconst_0
+         6: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+         9: putfield      #13                 // Field a:Ljava/lang/Double;
+        12: aload_0
+        13: dconst_0
+        14: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        17: putfield      #19                 // Field b:Ljava/lang/Double;
+        20: aload_0
+        21: dconst_0
+        22: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        25: putfield      #22                 // Field c:Ljava/lang/Double;
+        28: return
+      LineNumberTable:
+        line 64: 0
+        line 65: 4
+        line 66: 12
+        line 67: 20
+        line 68: 28
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      29     0  this   Lcom/company/QuadraticEquation;
+
+  public com.company.QuadraticEquation(java.lang.Double, java.lang.Double, java.lang.Double);
+    descriptor: (Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=4
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #13                 // Field a:Ljava/lang/Double;
+         9: aload_0
+        10: aload_2
+        11: putfield      #19                 // Field b:Ljava/lang/Double;
+        14: aload_0
+        15: aload_3
+        16: putfield      #22                 // Field c:Ljava/lang/Double;
+        19: return
+      LineNumberTable:
+        line 77: 0
+        line 78: 4
+        line 79: 9
+        line 80: 14
+        line 81: 19
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      20     0  this   Lcom/company/QuadraticEquation;
+            0      20     1     a   Ljava/lang/Double;
+            0      20     2     b   Ljava/lang/Double;
+            0      20     3     c   Ljava/lang/Double;
+
+  public void solveEquation();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=7, locals=2, args_size=1
+         0: aload_0
+         1: invokevirtual #25                 // Method isQuadratic:()Z
+         4: ifeq          116
+         7: new           #29                 // class com/company/QuadraticEquation$Discriminant
+        10: dup
+        11: aload_0
+        12: aload_0
+        13: invokespecial #31                 // Method com/company/QuadraticEquation$Discriminant."<init>":(Lcom/company/QuadraticEquation;Lcom/company/QuadraticEquation;)V
+        16: astore_1
+        17: aload_1
+        18: invokevirtual #34                 // Method com/company/QuadraticEquation$Discriminant.isValid:()Z
+        21: ifne          37
+        24: aload_0
+        25: aconst_null
+        26: putfield      #37                 // Field x1:Ljava/lang/Double;
+        29: aload_0
+        30: aconst_null
+        31: putfield      #40                 // Field x2:Ljava/lang/Double;
+        34: goto          113
+        37: aload_0
+        38: aload_0
+        39: getfield      #19                 // Field b:Ljava/lang/Double;
+        42: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+        45: dneg
+        46: aload_1
+        47: invokevirtual #47                 // Method com/company/QuadraticEquation$Discriminant.getDiscriminant:()Ljava/lang/Double;
+        50: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+        53: invokestatic  #51                 // Method java/lang/Math.sqrt:(D)D
+        56: dadd
+        57: ldc2_w        #57                 // double 2.0d
+        60: aload_0
+        61: getfield      #13                 // Field a:Ljava/lang/Double;
+        64: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+        67: dmul
+        68: ddiv
+        69: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        72: putfield      #37                 // Field x1:Ljava/lang/Double;
+        75: aload_0
+        76: aload_0
+        77: getfield      #19                 // Field b:Ljava/lang/Double;
+        80: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+        83: dneg
+        84: aload_1
+        85: invokevirtual #47                 // Method com/company/QuadraticEquation$Discriminant.getDiscriminant:()Ljava/lang/Double;
+        88: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+        91: invokestatic  #51                 // Method java/lang/Math.sqrt:(D)D
+        94: dsub
+        95: ldc2_w        #57                 // double 2.0d
+        98: aload_0
+        99: getfield      #13                 // Field a:Ljava/lang/Double;
+       102: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+       105: dmul
+       106: ddiv
+       107: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       110: putfield      #40                 // Field x2:Ljava/lang/Double;
+       113: goto          162
+       116: aload_0
+       117: aload_0
+       118: getfield      #22                 // Field c:Ljava/lang/Double;
+       121: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+       124: dneg
+       125: aload_0
+       126: getfield      #19                 // Field b:Ljava/lang/Double;
+       129: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+       132: ddiv
+       133: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       136: putfield      #37                 // Field x1:Ljava/lang/Double;
+       139: aload_0
+       140: aload_0
+       141: getfield      #22                 // Field c:Ljava/lang/Double;
+       144: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+       147: dneg
+       148: aload_0
+       149: getfield      #19                 // Field b:Ljava/lang/Double;
+       152: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+       155: ddiv
+       156: invokestatic  #7                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       159: putfield      #40                 // Field x2:Ljava/lang/Double;
+       162: return
+      LineNumberTable:
+        line 87: 0
+        line 88: 7
+        line 89: 17
+        line 90: 24
+        line 91: 29
+        line 93: 37
+        line 94: 75
+        line 96: 113
+        line 97: 116
+        line 98: 139
+        line 100: 162
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           17      96     1 discriminant   Lcom/company/QuadraticEquation$Discriminant;
+            0     163     0  this   Lcom/company/QuadraticEquation;
+      StackMapTable: number_of_entries = 4
+        frame_type = 252 /* append */
+          offset_delta = 37
+          locals = [ class com/company/QuadraticEquation$Discriminant ]
+        frame_type = 250 /* chop */
+          offset_delta = 75
+        frame_type = 2 /* same */
+        frame_type = 45 /* same */
+
+  public boolean isQuadratic();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #13                 // Field a:Ljava/lang/Double;
+         4: invokevirtual #43                 // Method java/lang/Double.doubleValue:()D
+         7: invokestatic  #59                 // Method java/lang/Math.abs:(D)D
+        10: ldc2_w        #62                 // double 1.0E-323d
+        13: dcmpl
+        14: ifle          21
+        17: iconst_1
+        18: goto          22
+        21: iconst_0
+        22: ireturn
+      LineNumberTable:
+        line 108: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      23     0  this   Lcom/company/QuadraticEquation;
+      StackMapTable: number_of_entries = 2
+        frame_type = 21 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  public java.lang.Double getX1();
+    descriptor: ()Ljava/lang/Double;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #37                 // Field x1:Ljava/lang/Double;
+         4: areturn
+      LineNumberTable:
+        line 117: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/company/QuadraticEquation;
+
+  public java.lang.Double getX2();
+    descriptor: ()Ljava/lang/Double;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #40                 // Field x2:Ljava/lang/Double;
+         4: areturn
+      LineNumberTable:
+        line 126: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/company/QuadraticEquation;
+}
+SourceFile: "QuadraticEquation.java"
+NestMembers:
+  com/company/QuadraticEquation$Discriminant
+InnerClasses:
+  public #80= #29 of #14;                 // Discriminant=class com/company/QuadraticEquation$Discriminant of class com/company/QuadraticEquation
